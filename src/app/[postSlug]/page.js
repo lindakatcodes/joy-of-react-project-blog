@@ -6,6 +6,7 @@ import BlogHero from "@/components/BlogHero";
 import CodeSnippet from "@/components/CodeSnippet";
 import styles from "./postSlug.module.css";
 import DivisionGroupsDemo from "@/components/DivisionGroupsDemo";
+import CircularColorsDemo from "@/components/CircularColorsDemo";
 
 export async function generateMetadata({ params }) {
   const { frontmatter } = await loadBlogPost(params.postSlug);
@@ -29,6 +30,7 @@ async function BlogPost({ params }) {
           components={{
             pre: CodeSnippet,
             DivisionGroupsDemo,
+            CircularColorsDemo,
           }}
         />
       </div>
